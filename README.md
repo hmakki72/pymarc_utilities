@@ -1,7 +1,6 @@
 <H1>Pymarc Utilities</H1>
 <p>Pymarc Utilities is a set of functions developed to ease the manipulation of large raw MARC files. These functions are:</p>
-<p>Pymarc is required.  </p>
-<p> More information on Pymarc can be found on <a href="https://pypi.org/project/pymarc/" target="_blank">Pymarc 5.1.2 Project page</a>.</p>
+<p>Pymarc is required. More information on Pymarc can be found on <a href="https://pypi.org/project/pymarc/" target="_blank">Pymarc 5.1.2 Project page</a>.</p>
 <h2>1)	Find: </h2>
 <p>
 - Find functions allows you to search for target field, indicators, or subfields.</p>
