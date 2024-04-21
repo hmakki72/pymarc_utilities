@@ -44,5 +44,17 @@ Retrieves the total number of MARC records in a file.
 This Function retrieves a dataset of MARC records that starts from a record number in a file.
 <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records(5000,5009)</h3></p>
 <p>Returns a list of 10 records starting from record number 5000 in a file, and ends with records number 5009.</p>
-
-
+<p></p>
+<p><h1>Export MARC fields to CSV file:</h1></p>
+<p><h2>7)	Export Normalized Fields:</h2></p>
+This Function retrieves a dataset of MARC records that starts from a record number in a file.
+<p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records(5000,5009)</h3></p>
+<p>Returns a list of 10 records starting from record number 5000 in a file, and ends with records number 5009.</p>
+<p><h2>8)	Export subfields:</h2></p>
+This Function retrieves a dataset of MARC records that starts from a record number in a file.
+<p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records(5000,5009)</h3></p>
+<p>Returns a list of 10 records starting from record number 5000 in a file, and ends with records number 5009.</p>
+<p><h2>9)	DB Normalized Export:</h2></p>
+This Function retrieves a dataset of MARC records that starts from a record number in a file.
+<p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records(5000,5009)</h3></p>
+<p>Returns a list of 10 records starting from record number 5000 in a file, and ends with records number 5009.</p>
