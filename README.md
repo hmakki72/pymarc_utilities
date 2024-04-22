@@ -1,6 +1,6 @@
 <H1>Pymarc Utilities</H1>
-<p>Pymarc Utilities is a set of functions developed to ease the manipulation of large raw MARC files. These functions are:</p>
-<p>Pymarc is required. More information on Pymarc can be found on <a href="https://pypi.org/project/pymarc/" target="_blank">Pymarc 5.1.2 Project page</a>.</p>
+<p>Pymarc Utilities offer a suite of functions designed to facilitate the handling and manipulation of MARC (Machine-Readable Cataloging) records, which are the international standard for bibliographic and related information. These utilities require <a href="https://pypi.org/project/pymarc/" target="_blank">Pymarc 5.1.2 </a>, a Python library, as a prerequisite for their operation. </p>
+<p>The utilities include features for finding and replacing data within MARC records, such as specific tags, indicators, or subfields, and can even utilize regular expressions for more complex search patterns. Additionally, they provide the ability to swap linked fields, particularly useful for managing vernacular and Romanized fields in bibliographic records. Another notable function is the uncombining of diacritics, which separates combined UTF-8 characters into their base characters and diacritic marks, aiding in the normalization of text. Lastly, the utilities can count the number of records in a raw MARC file, providing a quick overview of the dataset size. These tools are essential for librarians, archivists, and anyone working with large volumes of bibliographic data, streamlining the process of cataloging and data management.</p>
 <p><h1>1- PyMARC_Utilites:</h1></p>
 <p><h2>Class FIND_AND_REPLACE</h2></p>
 <h2>1.1)	Find: </h2>
