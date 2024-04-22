@@ -66,7 +66,7 @@ This Function retrieves a dataset of MARC records that starts from a record numb
   <p></p>
 <p>Creates a CSV file with the following headers<br><code>100,245,650</code></p>
 <p><h2>4.2)	Export subfields:</h2></p>
-It takes 2d list of tags and subfields like this [["245","a","b","z"], ["300","a"], ["264","a","c"]], and exports subfields values in one CSV row.
+It takes 2d list of tags and subfields like this [["245","a","b","z"], ["300","a"], ["264","a","c"]], and exports subfields values in one CSV row. This function retrieves only the first occurrence of the repeated fields and subfields.
 <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subfields_to_csv(records list of PyMARC records, 2D list if tags and subfields codes)</h3></p>
 <code> #Create 2d list
  thislist = [["245","a","b","h"], ["300","a"], ["264","a","c"]]
