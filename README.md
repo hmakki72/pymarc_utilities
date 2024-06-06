@@ -21,6 +21,7 @@ Find and Replace functions allows you to search for target field, indicators, or
 </p>
 <p></p>
 <h2>1.3)	Swap linked fields:</h2>
+<p>The utilities facilitate the swapping of linked fields, which is invaluable for maintaining the integrity of vernacular and Romanized fields in bibliographic records.</p>
 <p>
 The swap function makes the 880 fields the main fields and converts the main fields into linked fields 880.  Use this function if you want to make the vernacular field the main fields, and make the Romanized fields the linked fields.
 <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap_bib_linked_fields(record)</h3></p>
@@ -44,6 +45,7 @@ The swap function makes the 880 fields the main fields and converts the main fie
 <p></p>
 <p><h1>3- PyMARC Utilities:</h1></p>
 <p><h2>Class File</h2></p> 
+<p>The ability to count the number of records in a raw MARC file provides a quick assessment of the dataset's size, aiding in data management tasks.</p>
 <h2>3.1)	Count number of records in a raw MARC file:</h2>
 Retrieves the total number of MARC records in a file.
 <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records_count()</h3></p>
@@ -92,3 +94,6 @@ It takes 2d list of tags and subfields like this [["245","a","b","z"], ["300","a
  fieldsto_csv.db_normalized_to_csv(records_list)</code>
 <p></p>
 <p>Creates a CSV file with the following headers<br><code>PK,001,Tag_Sequence,Tag,Ind1,Ind2,Subfield_Squence,Subfield_code,Field_Value</code></p>
+<p></p>
+
+<p>Overall, Pymarc Utilities serve as an essential resource for librarians, archivists, and anyone involved in the handling of extensive bibliographic data, ensuring efficient and accurate cataloging and data management operations.</p>
