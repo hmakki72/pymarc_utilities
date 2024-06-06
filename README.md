@@ -35,6 +35,7 @@ The swap function makes the 880 fields the main fields and converts the main fie
  <p></p>
 <p><h1>2- PyMARC Utilities:</h1></p>
 <p><h2>Class ENCODING</h2></p> 
+<p>The uncombining of diacritics feature is another significant function, as it helps normalize text by separating combined UTF-8 characters into their base characters and diacritic marks.</p>
 <h2>2.1)	Uncombine diacritics:</h2>
 <p>Replace combined UTF-8 characters to uncombined characters (characters+diacritics)</p>
 <p>For example: change combine a macron ā to two characters (a+macron) ā </p> 
