@@ -57,6 +57,9 @@ This Function retrieves a dataset of MARC records that starts from a record numb
 <p></p>
 
 <p><h1>4- Export MARC fields to CSV file:</h1></p>
+<p>For instance, you might use Pymarc to extract all the titles, authors, and publication dates from a collection of MARC records and then save this information into a CSV file for further analysis or reporting.</p>
+<p>The process involves writing a script in Python that utilizes the Pymarc library to read MARC records, select the desired fields, and then write those fields to a CSV file. There are resources and examples available online that can guide you through this process.
+</p>
 <p><h2>Class EXPORT_CSV</h2></p>
 <p><h2>4.1)	Export Normalized Fields:</h2></p>
  This function removes all subfield codes and delimters from a field,  
