@@ -13,12 +13,17 @@
 <p>-	You can find data in a control field as well.
   </p>
 	<p ><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find(record, sample_field)</h3></p>
+ <p></p>
+  <a href="https://github.com/hmakki72/pymarc_utilities/blob/main/test_find_replace.py" target="_blank"><I>See test_find_replace.py</I></a> 
 <p></p>
+
 <h2>1.2)	Find and Replace:</h2>
 <p>
 Find and Replace functions allows you to search for target field, indicators, or subfields, and replace it with something else.
 	<p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find_and_replace(record, find_field, replace_with_field)</h3>
 </p>
+<p></p>
+<a href="https://github.com/hmakki72/pymarc_utilities/blob/main/test_find_replace.py" target="_blank"><I>See test_find_replace.py</I></a> 
 <p></p>
 <h2>1.3)	Swap linked fields:</h2>
 <p>The utilities facilitate the swapping of linked fields, which is invaluable for maintaining the integrity of vernacular and Romanized fields in bibliographic records.</p>
@@ -54,6 +59,7 @@ Retrieves the total number of MARC records in a file.
 This Function retrieves a dataset of MARC records that starts from a record number in a file.
 <p><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get_records(5000,5009)</h3></p>
 <p>Returns a list of 10 records starting from record number 5000 in a file, and ends with records number 5009.</p>
+
 <p></p>
 
 <p><h1>4- Export MARC fields to CSV file:</h1></p>
