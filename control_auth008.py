@@ -22,7 +22,7 @@ class Field008(object):
 
     See `LoC's documentation
     <https://www.loc.gov/marc/bibliographic/bd008.html>`_
-    for more infos about those fields.
+    for more info about those fields.
 
     .. code-block:: python
     import control_auth008
@@ -96,7 +96,7 @@ class Field008(object):
     def date_entered(self, value: str) -> None:
         """date_entered (00-05)."""
         if len(value) != 6:
-            raise BadLeaderValue(f"Date Entered is 6 chars field, got {value}")
+            raise BadLeaderValue(f"Date Entered is 6 char field, got {value}")
         self._replace_values(position=0, value=value)
 
     @property
@@ -144,7 +144,7 @@ class Field008(object):
     def record_kind(self, value: str) -> None:
         """record_kind (09)."""
         if len(value) != 1:
-            raise BadLeaderValue(f"Record kind is 1 chars field, got {value}")
+            raise BadLeaderValue(f"Record kind is 1 char field, got {value}")
         self._replace_values(position=9, value=value)
 
     @property
@@ -230,7 +230,7 @@ class Field008(object):
     def heading_use_series(self, value: str) -> None:
         """heading_use_series (16)."""
         if len(value) != 1:
-            raise BadLeaderValue(f"Heading_use_series is 1 chars field, got {value}")
+            raise BadLeaderValue(f"Heading_use_series is 1 char field, got {value}")
         self._replace_values(position=16, value=value)
 
     @property
@@ -340,7 +340,7 @@ class Field008(object):
     def undefined_34(self, value: str) -> None:
         """Subfield code count (34-37)."""
         if len(value) != 4:
-            raise BadLeaderValue(f"undefined_34 is 4 chars field, got {value}")
+            raise BadLeaderValue(f"undefined_34 is 4 char field, got {value}")
         self._replace_values(position=34, value=value)
 
     @property
