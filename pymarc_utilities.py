@@ -184,20 +184,20 @@ class FIND_AND_REPLACE:
       Use this function if you want to make the vernacular field 
       the main fields, and the Romainzed fields are the linked fields
       It converts this:
-      =100  1\$6880-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
-      =880  1\$6100-01/(3/r‏$a‏مصطفى، عبد العزيز.
+      =100  1#$6880-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
+      =880  1#$6100-01/(3/r‏$a‏مصطفى، عبد العزيز.
       =245  10$6880-02$aQabla an yuhdama al-Aqṣá /$cʻAbd al-ʻAzīz Muṣṭafá.
       =880  10$6245-02/(3/r‏$a‏قبل ا يهدم الأقصى /‏$c‏عبد العزيز مصطفى.
-      =260  \\$6880-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
-      =880  \\$6260-03/(3/r‏$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
+      =260  ##$6880-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
+      =880  ##$6260-03/(3/r‏$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
       
       To this:
-      =100  1\$6880-01$a‏مصطفى، عبد العزيز.
+      =100  1#$6880-01$a‏مصطفى، عبد العزيز.
       =245  10$6880-02$a‏قبل ا يهدم الأقصى /‏$c‏عبد العزيز مصطفى.
-      =260  \\$6880-03$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
-      =880  1\$6100-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
+      =260  ##$6880-03$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
+      =880  1#$6100-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
       =880  10$6245-02$aQabla an yuhdama al-Aqṣá /$cʻAbd al-ʻAzīz Muṣṭafá.
-      =880  \\$6260-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
+      =880  ##$6260-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
 
       
       '''
