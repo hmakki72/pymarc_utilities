@@ -20,7 +20,7 @@ class Field008(object):
 
     See `LoC's documentation
     <https://www.loc.gov/marc/bibliographic/bd008.html>`_
-    for more infos about those fields.
+    for more info about those fields.
 
     .. code-block:: python
     from pymarc import MARCReader
@@ -95,7 +95,7 @@ class Field008(object):
     def date_entered(self, value: str) -> None:
         """date_entered (00-05)."""
         if len(value) != 6:
-            raise BadLeaderValue(f"Date Entered is 6 chars field, got {value}")
+            raise BadLeaderValue(f"Date Entered is 6 char field, got {value}")
         self._replace_values(position=0, value=value)
 
     @property
@@ -119,7 +119,7 @@ class Field008(object):
     def date1(self, value: str) -> None:
         """Date 1 (07-10)."""
         if len(value) != 4:
-            raise BadLeaderValue(f"Date 1 is 4 chars field, got {value}")
+            raise BadLeaderValue(f"Date 1 is 4 char field, got {value}")
         self._replace_values(position=7, value=value)
 
     @property
@@ -143,7 +143,7 @@ class Field008(object):
     def publication_place(self, value: str) -> None:
         """Type of control (08)."""
         if len(value) != 3:
-            raise BadLeaderValue(f"Place of publication is 3 chars field, got {value}")
+            raise BadLeaderValue(f"Place of publication is 3 char field, got {value}")
         self._replace_values(position=15, value=value)
 
     @property
