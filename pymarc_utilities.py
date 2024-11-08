@@ -14,7 +14,7 @@ class ENCODING:
 
      
 #replace combined UTF-8 characters+diacritics to uncombined characters
-#For example: change ā to ā   
+#For example: change ā (U+0101) to ā   ((U+0061 U+0304)
  def uncombine_diacritics(self, record, skip_subfield_code):
        
        try:
@@ -33,7 +33,7 @@ class ENCODING:
                       )
                 #Loop on subfields
                 for subfield in field:
-                    #Skip $1 in authority files because it throw errors
+                    #Skip $1 in authority files because it throws errors
                     #Subfields' values with slash or backslash may throw errors
                     if subfield[0] != skip_subfield_code:
                        val=subfield[1]
@@ -178,26 +178,26 @@ class FIND_AND_REPLACE:
 
  def swap_bib_linked_fields(record):
     '''
-      Test sawp linked fields
+      Test swap linked fields
       The swap function makes the 880 fields the main fields
       and converts the main fields into linked fields 880
       Use this function if you want to make the vernacular field 
       the main fields, and the Romainzed fields are the linked fields
       It converts this:
-      =100  1#$6880-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
-      =880  1#$6100-01/(3/r‏$a‏مصطفى، عبد العزيز.
+      =100  1\$6880-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
+      =880  1\$6100-01/(3/r‏$a‏مصطفى، عبد العزيز.
       =245  10$6880-02$aQabla an yuhdama al-Aqṣá /$cʻAbd al-ʻAzīz Muṣṭafá.
       =880  10$6245-02/(3/r‏$a‏قبل ا يهدم الأقصى /‏$c‏عبد العزيز مصطفى.
-      =260  ##$6880-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
-      =880  ##$6260-03/(3/r‏$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
+      =260  \\$6880-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
+      =880  \\$6260-03/(3/r‏$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
       
       To this:
-      =100  1#$6880-01$a‏مصطفى، عبد العزيز.
+      =100  1\$6880-01$a‏مصطفى، عبد العزيز.
       =245  10$6880-02$a‏قبل ا يهدم الأقصى /‏$c‏عبد العزيز مصطفى.
-      =260  ##$6880-03$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
-      =880  1#$6100-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
+      =260  \\$6880-03$a[Riyadh :$b‏س.ن.]،‏$c1989‏$e‏(السويدي، الرياض :‏$f‏طبعة بمطابع دار طيبة)‬
+      =880  1\$6100-01$aMuṣṭafá, ʻAbd al-ʻAzīz.
       =880  10$6245-02$aQabla an yuhdama al-Aqṣá /$cʻAbd al-ʻAzīz Muṣṭafá.
-      =880  ##$6260-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
+      =880  \\$6260-03$a[Riyadh :$bs.n.],$c1989$e(al-Suwaydī, al-Riyāḍ :$fṬubiʻat bi-Maṭābiʻ Dār Ṭaybah)
 
       
       '''
@@ -238,7 +238,7 @@ class FIND_AND_REPLACE:
                           subfields=linked_field.subfields
                           )
                 
-                #Modify $6 values in the swaped filed
+                #Modify $6 values in the swapped field
                 add_newfield.delete_subfield ('6')
                 add_newfield.add_subfield ('6', record[field.tag]['6'], 0)
                        
