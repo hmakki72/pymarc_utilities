@@ -115,12 +115,13 @@ class FIND_AND_REPLACE:
                 value_found = re.search(subfield[1], record[find_field.tag][subfield[0]]) 
                 found = value_found
             else:
+             
                 #Subfield not found
                 found = False            
     return (found)
 
  @classmethod
- #Finds and replace a field in a record
+ #Find and replace a field in a record
  def find_and_replace(self, record, find_field, replace_with_field):
 
     found = self.find(record, find_field)
