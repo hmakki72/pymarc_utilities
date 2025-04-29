@@ -14,7 +14,7 @@ class ENCODING:
 
      
 #replace combined UTF-8 characters+diacritics to uncombined characters
-#For example: change ā to ā   
+#For example: change ā (U+0101) to ā   ((U+0061 U+0304)
  def uncombine_diacritics(self, record, skip_subfield_code):
        
        try:
@@ -33,7 +33,7 @@ class ENCODING:
                       )
                 #Loop on subfields
                 for subfield in field:
-                    #Skip $1 in authority files because it throw errors
+                    #Skip $1 in authority files because it throws errors
                     #Subfields' values with slash or backslash may throw errors
                     if subfield[0] != skip_subfield_code:
                        val=subfield[1]
@@ -179,7 +179,7 @@ class FIND_AND_REPLACE:
 
  def swap_bib_linked_fields(record):
     '''
-      Test sawp linked fields
+      Test swap linked fields
       The swap function makes the 880 fields the main fields
       and converts the main fields into linked fields 880
       Use this function if you want to make the vernacular field 
@@ -239,7 +239,7 @@ class FIND_AND_REPLACE:
                           subfields=linked_field.subfields
                           )
                 
-                #Modify $6 values in the swaped filed
+                #Modify $6 values in the swapped field
                 add_newfield.delete_subfield ('6')
                 add_newfield.add_subfield ('6', record[field.tag]['6'], 0)
                        
