@@ -22,7 +22,7 @@ Find field indicators value:
 Find field by field tag only:
   sample_field = Field(tag="900")
 
-Find value in control fieldsL
+Find value in control fields:
 sample_field = Field(tag="008", data='\Bara')
 ***Use regex patterns in data values
 
@@ -103,8 +103,8 @@ with open(input_marcfile, 'rb') as fh:
       Test swap linked fields in bib records
       The swap function makes the 880 fields the main fields
       and converts the main fields into linked fields 880
-      Use this function if you want to make the vernacular field 
-      the main fields, and the Romainzed fields are the linked fields
+      Use this function if you want to make the vernacular fields 
+      the main fields, and the Romanized fields are the linked fields
       '''
       if test_swap:
         #Swap linked fields in records where 008.language='ara'

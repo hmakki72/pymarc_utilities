@@ -40,8 +40,8 @@ class EXPORT_CSV:
  def normalized_fields_to_csv (self, records_list, tags_list):
   
   '''This function removes all subfield codes and delimters from a field,  
-     and saves the filed into csv file.
-     The csv is column headers are the tags in tags_list
+     and saves the field into a csv file.
+     The csv's column headers are the tags in tags_list
   '''
   fieldnames=[]
   with open(self._csv_filename, 'w', newline='') as csvfile:
@@ -108,11 +108,11 @@ class EXPORT_CSV:
  def db_normalized_to_csv (self, records_list):
   
   '''
-    It extracts records into a sinlge csv file.
+    It extracts records into a single csv file.
     Each record is extracted in rows.
     All rows of a record can be link with a primary key
     and control number in 001.
-    Also, this function retains the squence of tags and subfields.    
+    Also, this function retains the sequence of tags and subfields.    
   '''
   fieldnames=[]
   with open(self._csv_filename, 'w', newline='') as csvfile:
